@@ -11,7 +11,7 @@ cd "$DIR"
 DEST_FILE="$(mktemp)"
 wget "${URL}" -O "${DEST_FILE}"
 
-mv "${DEST_FILE}" ./
+mv "${DEST_FILE}" "./jquery.min.js"
 
 git add .
 git commit -m "${COMMENT}"
